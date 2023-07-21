@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: blueviolet;
+    font-family: BreveText, helvetica, sans-serif;
+    font-feature-settings: normal;
+    font-style: normal;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: black;
+    animation: changecolor;
+}
+.container{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin-left: 250px;
+}
+#Heart {
+    font-size: 350px;
+    animation-name: changecolor;
+    animation: heartcolor 1s 11;
+    color: rgb(255, 87, 51);
+    
+}
+
+#square {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 120px;
+    border-radius: 10px;
+    animation: squarecolor 1s 11;
+    margin-left: 60px;
+}
+
+#circle{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: rgb(12, 50, 2);
+    margin-top: 110px;
+    margin-left: 60px;
+    animation: squarecolor 1s 11;
+}
+
+@keyframes heartcolor{
+    from {color:black;}
+    to {color:rgba(255, 98, 0, 0.841);}
+}
+@keyframes squarecolor{
+    from{background-color:black;} 
+    to{background-color: rgb(12, 50, 2);}
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 25px 20px 25px 20px ;
+}
+
+.navbar{
+    width: 100%;
+    height: 70px;
+    animation-name:changecolor;
+    animation-duration: 2s;
+    animation-iteration-count: 10;
+}
+@keyframes changecolor{
+    from {color:black;}
+    to {color:red;}
+
+    from{background-color:rgb(255, 87, 51);} 
+    to{background-color: rgb(51, 126, 172);}
+    
+
+}
+#navitem{
+    width: 70%;
+    height: 70px;
+}
